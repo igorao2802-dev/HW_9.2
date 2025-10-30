@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Orbita — Эллиптическая орбита Луны</title>
+  <link rel="stylesheet" href="css/orbita.css">
+</head>
+<body>
+  <main class="scene" role="main" aria-label="Сцена орбиты Луны">
+    <section class="orbit-wrap is-tilted" aria-hidden="false" title="Эллиптическая орбита">
+      <div class="orbit-path" aria-hidden="true"></div>
+
+      <!-- Земля: внутри контейнера earth-spin, чтобы земля вращалась вокруг своей оси -->
+      <div class="earth-container" aria-hidden="false">
+        <div class="earth-spin">
+          <div class="earth" aria-label="Земля"></div>
+        </div>
+      </div>
+
+      <!-- Трек для луны: вращается весь трек, луна закреплена в верхней точке -->
+      <div class="moon-track" aria-hidden="false">
+        <div class="moon" aria-label="Луна"></div>
+      </div>
+
+      <!-- теневая подложка для глубины -->
+      <div class="shadow" aria-hidden="true"></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,45 +1,57 @@
-/*html, bodylheight: 100%;|}
+html, body {height: 100%;}
 
-body!
-margin: 0:
+body {
+margin: 0;
 padding: 0;
 font: 1em sans-serif;
-background: url(images/cosmos.jpg);
-background-size: cover
-.earthl
+background: url(../images/cosmos.jpg);
+background-size: cover;
+}
+
+.earth {
 width: ЗООрх;
 padding: 100рх;
 position: relative;
 z-index: 1;
+/*animation: linear 5s orbita infinite;
+*/
+}
 
-.moon{
+/*@keyframes earth {
+  0% {
+
+  } 100% {
+    transform: rotate(360deg);
+  }
+}*/
+
+.moon {
 position: absolute;
 top: 170рх;
 left: 170рх;
+/* width: 105px;
+-webkit-animation: ease-in-out 5s orbita infinite;*/
 -webkit-animation: linear 5s orbita infinite;
 animation: linear 5s orbita infinite;
 z-index: 0;
-1
-@-webkit-keyframes orbital
-0%{width: 72px;}
-24%1z-index: 0;}
-25%{left: 380px; top: 130px; z-index: 2;}
-50%{width: 128px;}
-74%{z-index: 2;}
-75%{top: ЗООрх; left: 40px; z-index: 0;} ioo%(width: 72px; transform: rotate(360deg);}
-^keyframes orbital
-0%lwidth: 72px;}
-24%1z-index: 0:}
-25%lleft: 380px; top: 130рх; z-index: 2;}
-50%lwidth: 128px;}
-74%1z-index: 2;}
-75%ltop: ЗООрх; left: 40px; z-index: 0;} 100%lwidth: 72px; transform: rotate(360deg);}
 }
 
+@-webkit-keyframes orbita {
+0% {width: 72px;}
+24% {z-index: 0;}
+25% {left: 380px; top: 130px; z-index: 2;}
+50% {width: 128px;}
+74% {z-index: 2;}
+75% {top: ЗООрх; left: 40px; z-index: 0;} 
+100% {width: 72px; transform: rotate(360deg);}
+}
 
-
-
-
-
-
-
+@keyframes orbita {
+0% {width: 72px;}
+24% {z-index: 0;}
+25% {left: 380px; top: 130рх; z-index: 2;}
+50% {width: 128px;}
+74% {z-index: 2;}
+75% {top: ЗООрх; left: 40px; z-index: 0;} 
+100% {width: 72px; transform: rotate(360deg);}
+}
